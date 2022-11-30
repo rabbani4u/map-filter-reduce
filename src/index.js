@@ -72,7 +72,7 @@
 import emojipedia from "./emojipedia";
 
 const newEmojiEntry = emojipedia.map(function (emojiEntry) {
-  return emojiEntry.meaning.substring(0, 100);
+  return emojiEntry.id;
 });
 
 console.log(newEmojiEntry);
