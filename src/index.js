@@ -21,8 +21,16 @@
 var numbers = [3, 56, 2, 48, 5];
 //Filter - Create a new array by keeping the items that return true.
 
-const newNumber = numbers.filter(function (num) {
-  return num < 10;
+// const newNumber = numbers.filter(function (num) {
+//   return num < 10;
+// });
+
+const newNumber = [];
+
+numbers.forEach(function (num) {
+  if (num < 10) {
+    newNumber.push(num);
+  }
 });
 
 console.log(newNumber);
